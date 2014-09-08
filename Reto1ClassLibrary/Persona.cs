@@ -21,5 +21,9 @@ namespace Reto1ClassLibrary {
 
             return Nombre == otraPersona.Nombre && Edad == otraPersona.Edad;
         }
+
+        public override int GetHashCode() {
+            return base.GetHashCode();
+        }
     }
 }
