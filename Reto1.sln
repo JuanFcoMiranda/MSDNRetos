@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30723.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reto1UnitTest", "Reto1UnitTest\Reto1UnitTest.csproj", "{F6615134-E1AE-46D8-9D7A-BBA68E984F0C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reto1ClassLibrary", "Reto1ClassLibrary\Reto1ClassLibrary.csproj", "{D60CFE67-AB02-4A62-8E35-72BE62503A9A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F6615134-E1AE-46D8-9D7A-BBA68E984F0C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6615134-E1AE-46D8-9D7A-BBA68E984F0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6615134-E1AE-46D8-9D7A-BBA68E984F0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6615134-E1AE-46D8-9D7A-BBA68E984F0C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D60CFE67-AB02-4A62-8E35-72BE62503A9A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D60CFE67-AB02-4A62-8E35-72BE62503A9A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D60CFE67-AB02-4A62-8E35-72BE62503A9A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D60CFE67-AB02-4A62-8E35-72BE62503A9A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
