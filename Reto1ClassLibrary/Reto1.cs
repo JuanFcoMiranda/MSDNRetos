@@ -6,9 +6,9 @@ namespace Reto1Lib {
     public class Reto1 {
         public static List<Persona> OrdenarLista(List<Persona> lista) {
             if (lista != null)
-                return (from p in lista.ToList()
+                return (from p in lista
                         orderby p.Edad descending, p.Nombre 
-                    select p).ToList();
+                        select p).ToList();
             return null;
         }
     }
