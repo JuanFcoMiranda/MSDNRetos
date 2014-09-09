@@ -6,7 +6,7 @@ namespace Reto1ClassLibrary {
         public int Edad { get; set; }
 
         public bool Equals(Persona otraPersona) {
-            return Nombre == otraPersona.Nombre && Edad == otraPersona.Edad;
+            return otraPersona != null && Nombre == otraPersona.Nombre && Edad == otraPersona.Edad;
         }
 
         public override bool Equals(object obj) {
