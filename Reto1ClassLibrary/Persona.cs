@@ -10,20 +10,12 @@ namespace Reto1ClassLibrary {
         }
 
         public override bool Equals(object obj) {
-            if (obj == null) {
-                return false;
-            }
-
             var otraPersona = obj as Persona;
-            if (otraPersona == null) {
-                return false;
-            }
-
-            return Nombre == otraPersona.Nombre && Edad == otraPersona.Edad;
+            return otraPersona != null && Nombre == otraPersona.Nombre && Edad == otraPersona.Edad;
         }
 
         public override int GetHashCode() {
-            return base.GetHashCode();
+            return Tuple.Create(Nombre, Edad).GetHashCode();
         }
     }
 }
