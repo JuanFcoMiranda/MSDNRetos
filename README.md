@@ -1,4 +1,4 @@
-MSDNReto1
+RetosMSDN
 =========
 
-Solución al reto 1
+Soluciones a los diferentes  retos.
