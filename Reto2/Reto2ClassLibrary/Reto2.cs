@@ -3,11 +3,20 @@ using System.Linq;
 
 namespace Reto2ClassLibrary {
     public class Reto2 : IReto2 {
-
-        public event EventHandler EventFired;
+        private event EventHandler eventFired;
+        public event EventHandler EventFired {
+            add {
+                if (value.Target is Item) {
+                    eventFired += value;
+                }
+            }
+            remove {
+                eventFired -= value;
+            }
+        }
         
         public void FireEvent() {
-            var eventList = (from i in EventFired.GetInvocationList() orderby (i.Target as Item).Index select i);
+            var eventList = (from i in eventFired.GetInvocationList() orderby ((Item)i.Target).Index select i);
             foreach (var evento in eventList) {
                 evento.DynamicInvoke(this, null);
             }
