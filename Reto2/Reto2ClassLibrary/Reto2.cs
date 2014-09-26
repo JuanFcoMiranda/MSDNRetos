@@ -6,8 +6,18 @@ namespace Reto2ClassLibrary {
         private event EventHandler eventFired;
         public event EventHandler EventFired {
             add {
-                if (value.Target is Item) {
+                if (value != null && value.Target is Item) {
                     eventFired += value;
+                    var orderedEvents = from ev in eventFired.GetInvocationList()
+                        let evento = ev.Target as Item
+                        orderby evento.Index
+                        select ev;
+                    foreach (EventHandler evento in eventFired.GetInvocationList()) {
+                        eventFired -= evento;
+                    }
+                    foreach (EventHandler evento in orderedEvents) {
+                        eventFired += evento;
+                    }
                 }
             }
             remove {
@@ -16,10 +26,7 @@ namespace Reto2ClassLibrary {
         }
         
         public void FireEvent() {
-            var eventList = (from i in eventFired.GetInvocationList() orderby ((Item)i.Target).Index select i);
-            foreach (var evento in eventList) {
-                evento.DynamicInvoke(this, null);
-            }
+            eventFired.DynamicInvoke(this, EventArgs.Empty);
         }
     }
 }
