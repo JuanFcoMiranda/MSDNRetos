@@ -5,7 +5,7 @@ VisualStudioVersion = 12.0.30723.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestProject", "UnitTestProject\UnitTestProject.csproj", "{29D4335C-6FE2-4F9A-B5A9-233C5765C5C2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shuffler", "..\Shuffler\Shuffler.csproj", "{E4FA9F87-D270-4F86-A16D-246C91B2BE09}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shuffler", "Shuffler\Shuffler.csproj", "{E4FA9F87-D270-4F86-A16D-246C91B2BE09}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

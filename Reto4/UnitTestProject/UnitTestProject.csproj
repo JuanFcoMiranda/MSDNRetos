@@ -54,7 +54,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\Shuffler\Shuffler.csproj">
+    <ProjectReference Include="..\Shuffler\Shuffler.csproj">
       <Project>{e4fa9f87-d270-4f86-a16d-246c91b2be09}</Project>
       <Name>Shuffler</Name>
     </ProjectReference>
